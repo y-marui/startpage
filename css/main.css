@@ -29,7 +29,7 @@ html {
 
 body {
     align-items: center;
-    background-color: #1f1f1f;
+    background-image: url("file:///Users/welby/Pictures/Papes/1514025468844.jpg");
     color: #ddd;
     display: flex;
     height: 100%;
@@ -108,7 +108,7 @@ main {
 }
 
 .pink {
-    color: #ffc7f1;
+    color: #ebd6e0;
 }
 
 /* IDs */
