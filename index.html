@@ -13,6 +13,7 @@
             }
         </style>
     </noscript>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
@@ -25,55 +26,128 @@
                 </h1>
             </div>
 
-            <form id="search-form" action="https://duckduckgo.com">
+            <form id="search-form" action="https://www.google.com">
                 <div id="search-bar-wrapper">
                     <input id="search-bar" name="q" type="text" title="Search" />
-                    <button id="search-bar-btn" type="submit">&#128270;</button>
+                    <button id="search-bar-btn" type="submit">
+                        <span class="iconify" data-icon="mdi:search-web" data-inline="false" color="white"></span>
+                    </button>
                 </div>
             </form>
         </div>
         <div id="links-container">
             <section class="link-section">
+                <h2 class="link-section-title pink">Essential</h2>
+                <hr />
+                <ul class="link-list">
+                    <li class="link-list-item">
+                        <a class="link" href="https://jp.inoreader.com/folder/Article%20Update">Inoreader</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://scholar.google.co.jp/">Google Scholar</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://news.google.com/">Google News</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link"
+                            href="https://faculty.math.illinois.edu/~murphyrf/teaching/M220-F2019/section-al1/">math
+                            dashboard</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link"
+                            href="https://drive.google.com/drive/u/1/folders/1gvuaeabYFMdcHkV__7zPl1EUMF4WpM4A">google
+                            drive</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="link-section">
                 <h2 class="link-section-title pink">college</h2>
                 <hr />
                 <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="https://learn.illinois.edu/my/">moodle</a></li>
-                    <li class="link-list-item"><a class="link" href="https://compass2g.illinois.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">compass</a></li>
-                    <li class="link-list-item"><a class="link" href="https://apps.uillinois.edu/selfservice/">self service</a></li>
-                    <li class="link-list-item"><a class="link" href="https://faculty.math.illinois.edu/~murphyrf/teaching/M220-F2019/section-al1/">math dashboard</a></li>
-                    <li class="link-list-item"><a class="link" href="https://drive.google.com/drive/u/1/folders/1gvuaeabYFMdcHkV__7zPl1EUMF4WpM4A">google drive</a></li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://learn.illinois.edu/my/">moodle</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link"
+                            href="https://compass2g.illinois.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">compass</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://apps.uillinois.edu/selfservice/">self
+                            service</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link"
+                            href="https://faculty.math.illinois.edu/~murphyrf/teaching/M220-F2019/section-al1/">math
+                            dashboard</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link"
+                            href="https://drive.google.com/drive/u/1/folders/1gvuaeabYFMdcHkV__7zPl1EUMF4WpM4A">google
+                            drive</a>
+                    </li>
                 </ul>
             </section>
             <section class="link-section">
                 <h2 class="link-section-title pink">cs</h2>
                 <hr />
                 <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="https://prairielearn.engr.illinois.edu/pl">prairie learn</a></li>
-                    <li class="link-list-item"><a class="link" href="https://cs125-forum.cs.illinois.edu/">125 forum</a></li>
-                    <li class="link-list-item"><a class="link" href="https://cs125.cs.illinois.edu/learn/#Spring_2020">125 slides</a></li>
-                    <li class="link-list-item"><a class="link" href="http://cs196.cs.illinois.edu/">196 home</a></li>
-                    <li class="link-list-item"><a class="link" href="https://piazza.com/class/k5xeml1e4b32u?cid=7#">piazza</a></li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://prairielearn.engr.illinois.edu/pl">prairie
+                            learn</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://cs125-forum.cs.illinois.edu/">125 forum</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://cs125.cs.illinois.edu/learn/#Spring_2020">125 slides</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="http://cs196.cs.illinois.edu/">196 home</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://piazza.com/class/k5xeml1e4b32u?cid=7#">piazza</a>
+                    </li>
                 </ul>
             </section>
             <section class="link-section">
                 <h2 class="link-section-title pink">code</h2>
                 <hr />
                 <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="https://github.com/welbym/">github</a></li>
-                    <li class="link-list-item"><a class="link" href="https://docs.oracle.com/javase/8/docs/api/">java docs</a></li>
-                    <li class="link-list-item"><a class="link" href="https://www.rust-lang.org/learn">rust</a></li>
-                    <li class="link-list-item"><a class="link" href="https://projecteuler.net/archives">euler</a></li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://github.com/welbym/">github</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://docs.oracle.com/javase/8/docs/api/">java
+                            docs</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://www.rust-lang.org/learn">rust</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://projecteuler.net/archives">euler</a>
+                    </li>
                 </ul>
             </section>
             <section class="link-section">
                 <h2 class="link-section-title pink">shid</h2>
                 <hr />
                 <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="https://4chan.org/wg">/wg/</a></li>
-                    <li class="link-list-item"><a class="link" href="https://4chan.org/wsg">/wsg/</a></li>
-                    <li class="link-list-item"><a class="link" href="https://4chan.org/fit">/fit/</a></li>
-                    <li class="link-list-item"><a class="link" href="https://www.netflix.com/browse">Netflix</a></li>
-                    <li class="link-list-item"><a class="link" href="https://www.youtube.com/">Youtube</a></li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://4chan.org/wg">/wg/</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://4chan.org/wsg">/wsg/</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://4chan.org/fit">/fit/</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://www.netflix.com/browse">Netflix</a>
+                    </li>
+                    <li class="link-list-item">
+                        <a class="link" href="https://www.youtube.com/">Youtube</a>
+                    </li>
                 </ul>
             </section>
         </div>
