@@ -29,7 +29,7 @@ html {
 
 body {
     align-items: center;
-    background-color: #1f1f1f;
+    background-image: url("file:///Users/welby/Pictures/Papes/1514025468844.jpg");
     color: #ddd;
     display: flex;
     height: 100%;
@@ -48,7 +48,7 @@ main {
 
 /* Classes */
 .links-container {
-    width: 100%;
+    width: 50%;
 }
 
 .link-section {
@@ -105,6 +105,10 @@ main {
 
 .purple {
     color: #9348ff;
+}
+
+.pink {
+    color: #ebd6e0;
 }
 
 /* IDs */
@@ -194,7 +198,7 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
-    
+
     #links-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
