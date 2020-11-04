@@ -14,3 +14,6 @@ Template for a minimalistic startpage with a search bar, clock, and space for a 
 * Fast to load
 * No visual clutter
 * Works without Javascript
+
+# See also
+* [startpages/startpages.github.io](https://github.com/startpages/startpages.github.io)
