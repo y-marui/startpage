@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Startpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <noscript>
+        <style>
+            #clock {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="top-div">
+            <div id="clock-div">
+                <h1 id="clock">
+                    00/00/0000
+                    00:00:00
+                </h1>
+            </div>
+
+            <form id="search-form" action="https://www.google.com">
+                <div id="search-bar-wrapper">
+                    <input id="search-bar" name="q" type="text" title="Search" />
+                    <button id="search-bar-btn" type="submit">
+                        <span class="iconify" data-icon="mdi:search-web" data-inline="false" color="white"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="links-container">
+            {% for k, v in data.items() %}
+            <section class="link-section">
+                {% if "," in k %}
+                {% set k, c = k.split(",") %}
+                <h2 class="link-section-title {{c}}">{{ k }}</h2>
+                {% else %}
+                <h2 class="link-section-title pink">{{ k }}</h2>
+                {% endif %}
+                <hr />
+                <ul class="link-list">
+                    {% for title, url in v %}
+                    <li class="link-list-item">
+                        <a class="link" href="{{ url }}">{{ title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            {% endfor %}
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
