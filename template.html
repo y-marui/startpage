@@ -39,13 +39,12 @@
         <div id="links-container">
             {% for k, v in data.items() %}
             <section class="link-section">
-                {% if "," in k %}
-                {% set k, c = k.split(",") %}
+                {% if loop.index0 < 4 %}
+                {% set c = ["red", "blue", "green", "purple"][loop.index0] %}
                 <h2 class="link-section-title {{c}}">{{ k }}</h2>
                 {% else %}
                 <h2 class="link-section-title pink">{{ k }}</h2>
                 {% endif %}
-                <hr />
                 <ul class="link-list">
                     {% for title, url in v %}
                     <li class="link-list-item">

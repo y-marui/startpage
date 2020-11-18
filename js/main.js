@@ -47,9 +47,9 @@ function search() {
     }
 
     if (value.startsWith('https://') || value.startsWith('http://')) {
-        window.location = value;
+        window.open(value);
     } else {
-        window.location = searchEngineUrl + encodeURIComponent(value);
+        window.open(searchEngineUrl + encodeURIComponent(value));
     }
 }
 

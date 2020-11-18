@@ -1,41 +1,45 @@
 import csv
 
 c.data = {
-    "Essential,red": """
+    "Essential": """
     Inoreader, https://jp.inoreader.com/folder/Article%20Update
     Google News, https://news.google.com
     Overleaf, https://www.overleaf.com
     Forvo, https://forvo.com
     Slite (LAB), https://qspin-ut.slite.com/app/root
     Slite (HOME), https://marui-family.slite.com/app/root
-    マイナビ2022, https://job.mynavi.jp/2022
-    リクナビ2022, https://job.rikunabi.com/2022
+    Mynavi2022, https://job.mynavi.jp/2022
+    Rikunabi2022, https://job.rikunabi.com/2022
+    Google Scholar, https://scholar.google.co.jp
+    arXiv Analytics, http://arxitics.com
+    Paperscape, http://paperscape.org
     """,
-    "University,blue": """
+    "University": """
     健康管理報告サイト, https://www.u-tokyo.ac.jp/ja/general/healthcheck.html
     UTREE, http://tokyo.summon.serialssolutions.com
     UTokyo OPAC, https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_search/
-    UTAS - the University of Tokyo, https://utas.adm.u-tokyo.ac.jp/campusweb/campusportal.do
+    UTAS, https://utas.adm.u-tokyo.ac.jp/campusweb/campusportal.do
     ITC-LMS, https://itc-lms.ecc.u-tokyo.ac.jp/portal/login
-    交流活動の概要 | 留学生支援ウェブサイト, https://www.u-tokyo.ac.jp/adm/inbound/ja/life-interact-ac.html
-    東大生協 在庫検索/和書発注, https://www.coopbooknavi.jp/zaik/book_search.php
-    大学生協 書籍, http://honya.univ.coop/
+    留学生支援ウェブサイト, https://www.u-tokyo.ac.jp/adm/inbound/ja/life-interact-ac.html
     東大 理学系研究科物理学専攻, http://www.phys.s.u-tokyo.ac.jp/
-    理学系研究科 端末管理システム, https://dhcp.adm.s.u-tokyo.ac.jp/auth/
+    端末管理システム, https://dhcp.adm.s.u-tokyo.ac.jp/auth/
     情報システムチーム, http://jimubu.adm.s.u-tokyo.ac.jp/public/index.php/情報システムチーム
     UTokyo WiFi, http://www.u-tokyo.ac.jp/ja/administration/dics/service/wifi.html
-    学外からデータベースや電子ジャーナルを使うには？, http://www.dl.itc.u-tokyo.ac.jp/gacos/faq/gakugai.html
-    林研究室 | 量子スピントロニクス/フォトニクス, http://qspin.phys.s.u-tokyo.ac.jp/jp/index.html
-    The University of Tokyo (東京大学) | 学生および教職員を対象したソフトウェアの割引, https://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?cmi_cs=1&cmi_mnuMain=f4b2ea63-9ba9-e511-9413-b8ca3a5db7a1&ws=5a131a7b-a30a-e811-80fe-000d3af41938&vsro=8
-    東京大学理学系研究科 TA/RA, https://thesis.phys.s.u-tokyo.ac.jp/tara/auth/login
-    東京大学生協 書籍注文・検索システム, https://bookzaikonavi.jp/tokyo/html/
+    GACoS, http://www.dl.itc.u-tokyo.ac.jp/gacos/faq/gakugai.html
+    OnTheHub, https://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?cmi_cs=1&cmi_mnuMain=f4b2ea63-9ba9-e511-9413-b8ca3a5db7a1&ws=5a131a7b-a30a-e811-80fe-000d3af41938&vsro=8
+    東大生協 書籍注文・検索, https://bookzaikonavi.jp/tokyo/html/
     """,
-    "Code,green": """
+    "Code": """
     Github, https://github.com
     CircleCI, https://circleci.com/gh/y-marui
     Wolfram|Alpha, https://www.wolframalpha.com
+    sute.jp, http://sute.jp
+    Moke_Meas, https://www.dropbox.com/developers/apps/info/n8gu7v2de9ujljb
+    Digital paper, https://www.sony.jp/digital-paper/support/template/
+    TensorFlow, https://www.tensorflow.org
+    PyTorch, https://pytorch.org
     """,
-    "EC,purple": """
+    "EC": """
     Amazon, https://www.amazon.co.jp
     AS ONE, https://www.as-1.co.jp
     MISUMI, https://jp.misumi-ec.com
@@ -54,6 +58,8 @@ c.data = {
     Technology of DeNA, https://engineer.dena.jp
     Advances in Engineering, https://advanceseng.com
     Open Culture, http://www.openculture.com
+    日経テレコン21, http://t21ipau.nikkei.co.jp/ipauth/auth/auth?sid=1
+    コンピュータアーキテクチャ, https://news.mynavi.jp/series/computer_architecture
     """,
     "Trade fair": """
     COMPUTEX, https://www.computextaipei.jp
@@ -62,9 +68,6 @@ c.data = {
     IFA, https://www.ifa-berlin.com
     """,
     "Journals": """
-    Google Scholar, https://scholar.google.co.jp
-    arXiv Analytics, http://arxitics.com
-    Paperscape, http://paperscape.org
     Physical Review Letters, https://journals.aps.org/prl
     Physical Review X, https://journals.aps.org/prx
     Reviews of Modern Physics, https://journals.aps.org/rmp
@@ -106,25 +109,19 @@ c.data = {
     Udemy, https://www.udemy.com
     intee, https://intee.jp/student/?for=eng
     言語処理100本ノック 2015, http://www.cl.ecei.tohoku.ac.jp/nlp100/#
-    Chainer チュートリアル, https://tutorials.chainer.org/ja/tutorial.html
-    Progate, https://prog-8.com/users/sign_in
     Grow with Google, https://grow.google/intl/ALL_jp
-    paiza, https://paiza.jp/student/mypage
     Hackr.io, https://hackr.io
-    コンピュータアーキテクチャ, https://news.mynavi.jp/series/computer_architecture
     Coursera, https://www.coursera.org
     edX, https://www.edx.org
     """,
-    "Utility": """
-    クロネコメンバーズ, https://cmypage.kuronekoyamato.co.jp/portal/entrance
+    "Package delivery": """
+    Yamato Transport, https://cmypage.kuronekoyamato.co.jp/portal/entrance
+    Japan Post, https://yu-bin.jp/mypage/
+    """,
+    "Wallpaper": """
     iShed, http://www7a.biglobe.ne.jp/~sohma/
     Dynamic Wallpaper Club, https://dynamicwallpaper.club/gallery
     Kamisora - Wallpaper Abyss, https://wall.alphacoders.com/by_creator.php?id=123043
-    使い捨てメールアドレス, http://sute.jp/
-    Moke_Meas - Dropbox, https://www.dropbox.com/developers/apps/info/n8gu7v2de9ujljb
-    日経テレコン21, http://t21ipau.nikkei.co.jp/ipauth/auth/auth?sid=1
-    テンプレート　ダウンロード | デジタルペーパー | デジタルペーパー | ソニー, https://www.sony.jp/digital-paper/support/template/
-    ゆうびんマイページ | 日本郵便株式会社, https://yu-bin.jp/mypage/
     """,
     "Cloud Sourcing": """
     ランサーズ, https://www.lancers.jp
@@ -137,7 +134,7 @@ c.data = {
     dancyu, https://dancyu.jp/recipe/index.html
     ノヴァのおすすめレシピ, https://www.nova-organic.co.jp/recipe
     男子ごはんのレシピ, https://www.osarai-kitchen.com/category/テレビ東京/男子ごはん
-    """
+    """,
 }
 
 for k, v in c.data.items():
